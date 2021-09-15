@@ -3,9 +3,13 @@
 A web application that renders the latest news feeds. This application uses https://newsapi.org/ API services to fetch latest news updates.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.3.
 
-## Development server
+## Development server(to run code locally)
 
-Run `npm install` and then run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1) Open a command prompt at current project path.
+2) Run `npm install`
+3) Run `ng serve` for a dev server. 
+4) Navigate to `http://localhost:4200/`.
+NOTE: The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
