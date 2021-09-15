@@ -25,11 +25,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Sample screens
 
-The sidebar on the left side of the screen has 'refresh News' followed by the section of categories. By default the screen shows news from all the categories.In case the user selects a particular category appliation renders news feed from selected category.Category section is followed by Sources dropdown with a list of sources from which News is fed to the screen.
+The sidebar on the left side of the screen has 'refresh News' followed by the section of categories. By default the screen shows news from all the categories.In case the user selects a particular category application renders news feed from selected category.Category section is followed by Sources dropdown with a list of sources from which News is fed to the screen.
 ![image](https://user-images.githubusercontent.com/90762384/133429386-c23f7b71-5fcc-46af-868b-f71893c7e917.png)
 Selecting a particular category.
 ![image](https://user-images.githubusercontent.com/90762384/133428808-098bef97-b279-416f-b47d-887f5cd2851f.png)
-User selecting a list of Sources from sources dropdown.
+User selecting a list of Sources from sources dropdown, application renders news feeds from selected sources.
 ![image](https://user-images.githubusercontent.com/90762384/133430555-99ed7844-498f-48d1-b0df-35887fb69455.png)
 
 
