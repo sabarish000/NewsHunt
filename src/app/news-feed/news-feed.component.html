@@ -1,0 +1,20 @@
+<div class="feed-box" style="width: 840px;height: 250px;">
+    <div class="feed-image-col">
+        <img class="feed-image" src="{{feed.urlToImage}}" (error) ="onImgError($event)" alt="No Image available">
+    </div>
+    <div class="feed-data">
+        <div class="feed-title">
+            <strong>{{feed.title}}</strong>
+        </div>
+        <div class="feed-info">
+            <strong>Feed</strong><span> by {{feed.author}} on {{feed.publishedAt | date :'fullDate'}}</span>
+        </div>
+        <div *ngIf="feed.content" class="feed-content">
+            <p>{{feed.content.length>197 ? (feed.content | slice:0:197)+'...':(feed.content)}}</p>
+        </div>
+        <div *ngIf="!feed.content && feed.description" class="feed-desc">
+            <p>{{feed.description}} </p>
+        </div>
+        <a href="{{feed.url}}" target="_blank">Read more...</a>
+    </div>
+</div>

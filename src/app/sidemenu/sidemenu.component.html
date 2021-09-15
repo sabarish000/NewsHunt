@@ -1,0 +1,46 @@
+<div class="body">
+    <div class="header">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+                <path
+                    d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+            </svg>
+            <span class="fs-4">News</span>
+        </a>
+    </div>
+    <div class="menu">
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <ng-container *ngIf="categories.length > 0">
+                <li *ngFor="let category of categories">
+                    <a (click)="selectCategory(category)"  [ngClass]=" category.active ? 'nav-link active' : 'nav-link text-white'">
+                        {{category.lable}}
+                    </a>
+                </li>
+            </ng-container>
+        </ul>
+        <hr>
+        <mat-form-field style="color: white;">
+            <mat-label style="color:white">Select Sources</mat-label>
+            <mat-select multiple (selectionChange)="selectSource($event)">
+              <mat-option style="background-color: #212529; color: white;" *ngFor="let source of sources" [value]="source.id" >
+                {{source.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        <hr>
+    </div>
+    <div class="user">
+        <a href="#" class="d-flex align-items-center text-white text-decoration-none" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg>
+            <strong style="padding-left: 15px;">{{user.name}}</strong>
+        </a>
+    </div>
+</div>

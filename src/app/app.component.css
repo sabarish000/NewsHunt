@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    overflow: auto;
+  }
+  
+  #sidebar, #container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  
+  #sidebar {
+    position: absolute;
+    left: 0;
+    width: 365px;
+    background: black;
+  }
+  #sidebar .padding {
+      padding: .64em;
+  }
+  
+  #container {
+    background: white;
+    right: 0;
+    left: 365px;
+  }

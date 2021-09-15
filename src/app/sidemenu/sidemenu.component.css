@@ -1,0 +1,25 @@
+.mat-select-value {
+    color: white !important;
+}
+:host /deep/ .mat-select-value {
+    color: white !important;
+}
+
+.not-empty-select.mat-selected {
+    color: white !important;
+}
+  
+:host /deep/ .mat-select-value-text {
+    color: white !important;
+}
+.mat-option .mat-option-ripple{
+    background-color: rgb(33, 37, 41);
+    color: white;
+}
+.mat-option-text{
+    width: 75px !important;
+}
+
+:host /deep/ .mat-option-text{
+    width: 75px !important;
+}
