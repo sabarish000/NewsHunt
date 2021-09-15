@@ -1,6 +1,7 @@
 # NewsHunt
 
-A web application that renders the latest news feeds. This application uses https://newsapi.org/ API services to fetch latest news updates.
+A web application that renders the latest news feeds and so that you can read interesting things happening around you and discover more stories.
+This application uses https://newsapi.org/ API services to fetch latest news updates.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.3.
 
 ## Development server(to run code locally)
