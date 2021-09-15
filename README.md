@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server(to run code locally)
 
-1) Open a command prompt at current project path.
+1) Open a command prompt at current project path.( Or Open project folder in VS code and open Integrated command prompt/terminal)
 2) Run `npm install`
 3) Run `ng serve` for a dev server. 
 4) Navigate to `http://localhost:4200/`.
